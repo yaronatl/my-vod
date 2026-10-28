@@ -20,4 +20,4 @@ The app opens on http://localhost:3000. OMDb keys can be overridden with a `.env
 - `/info/:id` details of one movie (the OMDb imdbID)
 - anything else shows a 404 page
 
-Deployed on Netlify: 
+Deployed on Netlify: https://unique-entremet-c0dc50.netlify.app/
