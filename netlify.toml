@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "build"
+
+# send every path to index.html so deep links work
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

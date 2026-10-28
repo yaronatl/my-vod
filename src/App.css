@@ -1,0 +1,49 @@
+/* keeps the footer at the bottom on short pages */
+#root { min-height: 100vh; display: flex; flex-direction: column; }
+.app-main { flex: 1 0 auto; }
+
+.vod-banner {
+  background: linear-gradient(120deg, #212529 0%, #3b2f63 55%, #b8860b 100%);
+  color: #fff;
+  min-height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px 16px;
+}
+.vod-banner h2 { font-weight: 700; letter-spacing: 1px; margin: 0 0 4px; }
+.vod-banner p { margin: 0; opacity: .85; }
+
+.movie-card {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .15);
+  border-radius: 4px;
+  padding: 12px;
+  height: 100%;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+.movie-card .poster-box { flex: 0 0 90px; }
+.movie-card h4 { font-size: 1.25rem; word-break: break-word; }
+
+.poster-img { width: 100%; height: auto; display: block; }
+.poster-placeholder {
+  background: #dee2e6;
+  color: #6c757d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: .8rem;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+}
+.poster-box-large { width: 100%; max-width: 300px; margin: 0 auto; }
+
+.info-page p { margin-bottom: .25rem; }
+
+@media (max-width: 575.98px) {
+  .movie-card .poster-box { flex-basis: 80px; }
+}
